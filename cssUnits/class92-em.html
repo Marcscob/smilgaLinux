@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      div{
+        font-size: 16px;
+      }
+        .absolute {
+            font-size: 32px;
+        }
+
+        .relative {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body> 
+    <div>
+        <h3 class="absolute">some text</h3>
+    </div>
+    <div>
+        <h3 class="relative">some text</h3>
+    </div>
+    
+   
+</body>
+
+</html>
+
+<!--   
+    em is relative and depend on the parent, the browser or some conteiner element
+    1em = 16px
+    note: the font size in the settings of the browser recommended is medium. its interfere in the relative em unit
+    if the parent base number is 10px, then child elements with 1em = 10px. 
+-->

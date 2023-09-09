@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+
+            border: 5px solid red;
+            display: flex;
+            /*will be block*/
+            /*display: inline-flex; /*will be inline. container width = sum of child divs*/
+            /*setting on the parent>>affects children*/
+            flex-direction: row;
+            flex-wrap: wrap;
+            /*responsive*/
+            /*justify-content: flex-start;*/
+            /*horizontal align*/
+            /* justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly; */
+            /*viewport height*/
+            height: 230px;
+            /*or use vh*/
+            height: 60vh;
+            /*note >> align items default is strech*/
+            /*align-items: flex-end;
+            turns off strech and put at container bottom
+            align-items: center;
+            turns off strech and put at container center
+            align-items: flex-start;
+            turns off strech and put at container top
+            align-items: baseline;/*self explanatory
+            align-items: stretch;
+            align-content: flex-end;turns off strech and put divs at container bottom
+          align-content: center;very simila to align items
+          
+          align-content: space-evenly;*/
+            /*
+The main difference between align-content and align-items is that align-content controls the alignment of flex lines, while align-items controls the alignment of flex items within a flex line.
+
+align-content : This property specifies how flex lines are distributed along the cross axis in a flexbox container. The cross axis is the axis perpendicular to the main axis.
+
+The align-content property can have the following values:
+
+flex-start: The flex lines are packed towards the start of the cross axis.
+flex-end: The flex lines are packed towards the end of the cross axis.
+center: The flex lines are centered along the cross axis.
+stretch: The flex lines are stretched to fill the available space along the cross axis.
+space-between: The flex lines are evenly spaced along the cross axis, with equal spacing between them.
+space-around: The flex lines are evenly spaced along the cross axis, with the same amount of spacing between each flex line and the edges of the container.
+space-evenly: The flex lines are evenly spaced along the cross axis, with the spacing between each flex line being proportional to the size of the flex line.
+align-items : This property specifies the default alignment for items inside a flexbox or grid container. The default alignment is stretch, which means that the items are stretched to fill the available space along the cross axis.
+
+The align-items property can have the following values:
+
+flex-start: The items are packed towards the start of the cross axis.
+flex-end: The items are packed towards the end of the cross axis.
+center: The items are centered along the cross axis.
+baseline: The items are aligned with their baselines along the cross axis.
+stretch: The items are stretched to fill the available space along the cross axis.
+inherit: The items inherit the alignment of their parent container.
+The align-content and align-items properties can be used together to create a variety of layouts. For example, you could use align-content: space-between to evenly space the flex lines, and then use align-items: center to center the items within each flex line.*/
+align-items: center;
+align-items: flex-start;
+
+
+        }
+        .d{
+            align-self: flex-end;/*align self only affects the element itself*/
+        }
+        .a{
+            align-self: stretch;
+        }
+
+        /*all children have order:0 by default. its possible to change the order without change html*/
+        /*if all elements are order 0, div a as order 1 will sent to end of container*/
+
+        .a {
+            order: 2;
+
+        }
+
+        .c {
+            order: 1;
+        }
+
+        .d {
+            order: 0;
+            /*the previous last n6 div sent to first position*/
+        }
+
+        .b {
+            order: 0;
+        }
+
+        .container-2 {
+            height: 800px;
+            border: 5px solid blue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /*because main axes now is vertical align items acts like a justify content and align horizontaly*/
+            justify-content: center;
+
+
+        }
+
+        .box {
+            padding: 30px;
+            text-align: center;
+            color: #fbf7f2;
+            font-size: 50px;
+            font-weight: 700;
+            margin: 10px 0 0 10px;
+        }
+
+        .a {
+            background-color: rgb(119, 119, 119);
+            /*font-size: 38vh;*/
+        }
+
+        .b {
+            background-color: rgb(56, 1, 1);
+        }
+
+        .c {
+            background-color: rgb(165, 212, 24);
+
+        }
+
+        .d {
+            background-color: rgb(19, 182, 173);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box a">1</div>
+        <div class="box b">2</div>
+        <div class="box c">3</div>
+        <div class="box d">4</div>
+
+
+
+    </div>
+    <div class="container-2">
+        <div class="box a">1</div>
+        <div class="box b">2</div>
+        <div class="box c">3</div>
+        <div class="box d">4</div>
+        <div class="box e">5</div>
+        <div class="box f">6</div>
+    </div>
+    <a href="index.html">back to hero</a>
+</body>
+
+</html>

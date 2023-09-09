@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            position: relative;
+
+        }
+
+
+        header {
+            background-color: bisque;
+            display: flex;
+
+        }
+
+        /* .wrap {
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            
+        } */
+
+
+        .container {
+            display: inline-flex;
+            flex-wrap: wrap;
+            background-color: rgb(219, 242, 117);
+            margin-top: 15px;
+            padding: 10px;    
+        }
+
+        .acordion {
+            background-color: brown;
+            width: 247px;
+            height: 305px;
+        }
+
+        .carrousel {
+            margin-left: 25px;
+            background-color: rgba(117, 117, 117, 0.989);
+            width: 870px;
+            height: 305px;
+            
+        }
+
+        .login {
+            background-color: rgb(222, 229, 23);
+            width: 247px;
+            height: 105px;
+        }
+
+        .advertise {
+            background-color: rgb(192, 250, 231);
+            width: 247px;
+            height: 349px;
+            margin-top: 30px;
+           
+
+        }
+
+        .rCol{
+            display: inline-flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+
+        .container-2 {
+            position: absolute;
+            top: 450px;
+            left: 0;
+            padding: 10px;  
+            display: inline-flex;
+            flex-wrap: wrap;
+            background-color: rgb(174, 207, 42);
+            
+        }
+
+        .linkMenu {
+            background-color: coral;
+            width: 249px;
+            height: 418px;
+        
+
+        }
+
+        
+        .video1 {
+            background-color: rgb(206, 39, 181);
+            margin-left: 25px;
+            width: 416px;
+            height: 324px;
+            margin-top: 30px;
+            
+        }
+
+        .video2 {
+            background-color: rgb(82, 17, 72);
+            width: 416px;
+            height: 324px;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        .map {
+            background-color: rgb(217, 13, 13);
+            width: 247px;
+            height: 234px;
+            margin-top: 30px;
+        }  
+        
+        footer {
+            position: absolute;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            top: 920px;
+            width: 1440px;
+            background-color: rgb(130, 122, 241);
+                  
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <h1>page title</h1>
+        <div class="nav">
+            <ul>
+                <li><a href="#">link1</a></li>
+                <li><a href="#">link2</a></li>
+                <li><a href="#">link3</a></li>
+                <li><a href="#">link4</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- <div class="wrap"> -->
+        <div class="container">
+            <div class="acordion">acordion</div>
+            <div class="carrousel">carrousel</div>
+            
+        </div>
+
+        <div class="rCol"> 
+            <div class="login">login</div>
+            <div class="advertise">advertise</div>
+            <div class="map">map</div>
+        </div>
+        
+        <div class="container-2">
+            <div class="linkMenu">linkMenu</div>
+            <div class="video1">video1</div>
+            <div class="video2">video2</div>
+        </div>
+        
+        
+    <!-- </div> -->
+
+    <footer>
+        <p>text</p>
+        <p>text</p>
+        <p>text</p>
+    </footer>
+</body>
+
+</html>
