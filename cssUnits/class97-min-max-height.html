@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+
+        }
+
+        .navbar {
+            background-color: blue;
+            height: 100px;
+            color: white;
+            font-size: 3rem;
+
+        }
+
+        .banner {
+            background-color: red;
+            /* height: calc(100vh - 100px); */
+            min-height: calc(100vh - 6rem);
+             font-size: 40px;
+        }
+
+        .example {
+            background-color: green;
+            width: 20rem;
+            height: 8rem;
+            overflow: hidden;
+            overflow: scroll;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="navbar">
+        <li>simple link</li>
+    </ul>
+    <div class="banner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fugit enim eligendi ad tempora accusamus atque odio, odit aliquid, esse totam eaque nihil repellat error illum, eos hic aperiam ipsa
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fugit enim eligendi ad tempora accusamus atque odio, odit aliquid, esse totam eaque nihil repellat error illum, eos hic aperiam ipsa!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fugit enim eligendi ad tempora accusamus atque odio, odit aliquid, esse totam eaque nihil repellat error illum, eos hic aperiam ipsa!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fugit enim eligendi ad tempora accusamus atque odio, odit aliquid, esse totam eaque nihil repellat error illum, eos hic aperiam ipsa!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fugit enim eligendi ad tempora accusamus atque odio, odit aliquid, esse totam eaque nihil repellat error illum, eos hic aperiam ipsa!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fugit enim eligendi ad tempora accusamus atque odio, odit aliquid, esse totam eaque nihil repellat error illum, eos hic aperiam ipsa!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda fugit enim eligendi ad tempora accusamus atque odio, odit aliquid, esse totam eaque nihil repellat error illum, eos hic aperiam ipsa!
+    </div>
+    <div class="example">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed corrupti, sit porro fuga eum aut quasi alias.
+            Ducimus, culpa. Eligendi quibusdam provident pariatur eos ipsum, soluta deserunt quaerat velit itaque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptatibus nobis nihil ad unde iure illum
+            accusantium possimus, quam, numquam necessitatibus rem temporibus, recusandae excepturi harum aliquid culpa
+            laborum. A?</p>
+    </div>
+
+
+</body>
+
+</html>
+<!--
+    default is height auto. so a simple paragraph gives height to a invisible div
+
+    min-heiht. instead use overflow hidden and scroll. div will expand to adapt his height
+
+    in case of max-height we dont want div expand, so we use overflow and scroll again
+-->
