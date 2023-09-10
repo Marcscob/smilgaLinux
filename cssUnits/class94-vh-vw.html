@@ -5,38 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            border: 0;
+            font-size: 1px;
         }
 
-        div {
-            background-color: red;
-           
-            min-height: 10vh;
-            
+        .parent {
+            height: 10vh;
             width: 100vw;
-            /* overflow: hidden; */
+            background-color: rgb(16, 16, 2);
+
+        }
+
+        .sibling {
+        height: 10vh; 
+            width: 15vw;
+            background-color: yellow;
+            display: inline-block;
+            
+            color: black;
+            
             
         }
-        div h1{
-            font-size: 12vw;
-            text-align: center;
-            
-           
+
+        .main {
+            height: 10vh;
+            width: 70vw;
+            background-color: rgb(2, 61, 42);
+            display: inline-block;
+
+        }
+
+        .aside {
+            height: 10vh;
+            width: 15vw;
+            background-color: aquamarine;
+            display: inline-block;
+
+
+
         }
     </style>
 
 </head>
 
 <body>
-    <div>
-        <div class="title">
-            <h1>div vermelha</h1>
-        </div>
+    <div class="parent"></div>
+
+    <div class="sibling"></p>
+
     </div>
+    <div class="main"></div>
+    <dic class="aside"></div>
 
 </body>
 
