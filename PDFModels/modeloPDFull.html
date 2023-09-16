@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:wght@100;200;400;600;800&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100vw;
+        font-family: 'Oswald', sans-serif;
+        /*font-family: 'Raleway', sans-serif;*/
+        font-weight: 200;
+
+        letter-spacing: 3.8px;
+
+        box-sizing: border-box;
+        background-color: rgb(255, 255, 255);
+    }
+
+    /* .cabecalho8 {
+        display: flex;
+        height: 80px;
+
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to right, #9d9500b8, #008f0ac1);
+        color: rgb(255, 255, 255);
+        border-radius: 20px;
+        padding: 5px 30px;
+        
+        box-shadow: 2px 3px 3px 5px rgba(0, 0, 0, 0.2);
+    } */
+
+    .cabecalho9 {
+        width: 100vw;
+        margin: 0 auto;
+        display: flex;
+        height: 80px;
+
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to right, #009893e3, #160056);
+        color: rgb(255, 255, 255);
+
+
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+
+
+    }
+
+
+    #date {
+        padding: 60px 15px 15px 5px;
+        font-size: 14px;
+        color: white;
+        font-weight: 300;
+
+    }
+
+    /* .img {
+
+        height: 25px;
+        width: 25 px;
+    
+
+    } */
+    img {
+        height: 44px;
+        width: 55 px;
+        margin-left: 20px;
+
+    }
+
+    #title {
+        font-size: 25px;
+    }
+
+    #company {
+        color: rgb(0, 0, 0);
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 25px;
+        font-weight: 400;
+
+    }
+
+    main {
+        margin: 0 auto;
+        width: 98vw;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+    }
+
+    .areaEsetor {
+        width: 98vw;
+        display: flex;
+
+        margin: 10px auto 40px;
+
+
+    }
+
+    .vert0 {
+        height: 30px;
+        width: 16px;
+        background-color: rgb(255, 255, 255);
+        margin-right: 15px;
+        margin-top: 20px;
+    }
+
+    .area {
+        width: 45.6vw;
+
+    }
+
+    .setor {
+        width: 45.6vw;
+
+
+    }
+
+    #pArea {
+        font-weight: 500;
+        margin-left: 0px;
+    }
+
+    #pSetor {
+        font-weight: 500;
+        margin-left: 0px;
+    }
+
+    .leg {
+        display: flex;
+        width: 98vw;
+        /* justify-content: space-between; */
+        align-items: center;
+        text-align: center;
+        margin: 10px auto 10px;
+        background-color: #e2f4ff;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 5px 15px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 2px rgba(4, 132, 164, 0.253);
+    }
+
+    .atendimento {
+        margin-left: 50px;
+        margin-right: 15px;
+
+    }
+
+    .data {
+        margin-right: 15px;
+    }
+
+    .responsavel {}
+
+    .coluna {
+        width: 98vw;
+        display: flex;
+
+        margin: 20px auto;
+    }
+
+    .lv,
+    .evidencia {
+        width: 45vw;
+    }
+
+    .vert {
+        height: 10px;
+        width: 16px;
+        background-color: rgb(255, 255, 255);
+        margin-right: 15px;
+        margin-top: 20px;
+
+    }
+
+    h4 {
+        font-weight: 400;
+        background-image: linear-gradient(to right, #0098931a, #ffffff00);
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 0 8px;
+        color: rgb(29, 29, 29);
+
+    }
+
+    p {
+        font-size: 16px;
+        margin: 5px 0px 0px 15px;
+        font-weight: 400;
+    }
+
+    hr {
+        height: 2px;
+        background-color: rgba(174, 230, 251, 0.53);
+        border: 0;
+        border-radius: 100px;
+        margin-top: 50px;
+    }
+</style>
+
+<body>
+
+    <div class="cabecalho9">
+        <div class="img"><img src="./img/legnet_logo_br.svg" alt=""></div>
+        <p id="title">Histórico de Evidências</p>
+        <div class="h3">
+            <p id="date">15/09/2023</p>
+        </div>
+
+    </div>
+
+    <main>
+        <!-- <h2 id="company">Premier Ambiental</h2> -->
+
+        <div class="areaEsetor">
+
+            <div class="area">
+                <h3 id="area">Área</h3>
+                <p id="pArea">Unidade Rio de Janeiro</p>
+            </div>
+            <div class="vert0"></div>
+            <div class="setor">
+                <h3 id="setor">Setor</h3>
+                <p id="pSetor">Meio Ambiente</p>
+            </div>
+        </div>
+
+        <div class="leg">
+            <div class="norma">Lei nº 34522 de xx/xx/xxxx</div>
+
+
+            <div class="atendimento">
+                <h4>Atendido</h4>
+
+            </div>
+
+            <div class="data">
+                <h4>12/12/2023</h4>
+
+            </div>
+            <div class="responsavel">
+                <h4>Marcelo Botelho</h4>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="coluna">
+
+            <div class="lv">
+                <h4>Obrigação</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum veritatis expedita omnis hic
+                    repudiandae minima officiis provident facere?</p>
+            </div>
+            <div class="vert"></div>
+            <div class="evidencia">
+                <h4>Evidência</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi atque, numquam eius
+                    necessitatibus accusamus est</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="leg">
+            <div class="norma">Lei nº 4454 de xx/xx/xxxx</div>
+
+
+            <div class="atendimento">
+                <h4>Atendido</h4>
+
+            </div>
+
+            <div class="data">
+                <h4>12/12/2023</h4>
+
+            </div>
+            <div class="responsavel">
+                <h4>Marcelo Botelho</h4>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="coluna">
+
+            <div class="lv">
+                <h4>Obrigação</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum veritatis expedita omnis hic
+                    repudiandae minima officiis provident facere?</p>
+            </div>
+            <div class="vert"></div>
+            <div class="evidencia">
+                <h4>Evidência</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi atque, numquam eius
+                    necessitatibus accusamus est</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="leg">
+            <div class="norma">Lei nº 7676 de xx/xx/xxxx</div>
+
+
+            <div class="atendimento">
+                <h4>Atendido</h4>
+
+            </div>
+
+            <div class="data">
+                <h4>12/12/2023</h4>
+
+            </div>
+            <div class="responsavel">
+                <h4>Marcelo Botelho</h4>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="coluna">
+
+            <div class="lv">
+                <h4>Obrigação</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum veritatis expedita omnis hic
+                    repudiandae minima officiis provident facere?</p>
+            </div>
+            <div class="vert"></div>
+            <div class="evidencia">
+                <h4>Evidência</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi atque, numquam eius
+                    necessitatibus accusamus est</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="leg">
+            <div class="norma">Lei nº 7854 de xx/xx/xxxx</div>
+
+
+            <div class="atendimento">
+                <h4>Atendido</h4>
+
+            </div>
+
+            <div class="data">
+                <h4>12/12/2023</h4>
+
+            </div>
+            <div class="responsavel">
+                <h4>Marcelo Botelho</h4>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="coluna">
+
+            <div class="lv">
+                <h4>Obrigação</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum veritatis expedita omnis hic
+                    repudiandae minima officiis provident facere?</p>
+            </div>
+            <div class="vert"></div>
+            <div class="evidencia">
+                <h4>Evidência</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi atque, numquam eius
+                    necessitatibus accusamus est</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="leg">
+            <div class="norma">Lei nº 2222 de xx/xx/xxxx</div>
+
+
+            <div class="atendimento">
+                <h4>Atendido</h4>
+
+            </div>
+
+            <div class="data">
+                <h4>12/12/2023</h4>
+
+            </div>
+            <div class="responsavel">
+                <h4>Marcelo Botelho</h4>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="coluna">
+
+            <div class="lv">
+                <h4>Obrigação</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum veritatis expedita omnis hic
+                    repudiandae minima officiis provident facere?</p>
+            </div>
+            <div class="vert"></div>
+            <div class="evidencia">
+                <h4>Evidência</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi atque, numquam eius
+                    necessitatibus accusamus est</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="leg">
+            <div class="norma">Lei nº 3432 de xx/xx/xxxx</div>
+
+
+            <div class="atendimento">
+                <h4>Atendido</h4>
+
+            </div>
+
+            <div class="data">
+                <h4>12/12/2023</h4>
+
+            </div>
+            <div class="responsavel">
+                <h4>Marcelo Botelho</h4>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="coluna">
+
+            <div class="lv">
+                <h4>Obrigação</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum veritatis expedita omnis hic
+                    repudiandae minima officiis provident facere?</p>
+            </div>
+            <div class="vert"></div>
+            <div class="evidencia">
+                <h4>Evidência</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi atque, numquam eius
+                    necessitatibus accusamus est</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="leg">
+            <div class="norma">Lei nº 4345 de xx/xx/xxxx</div>
+
+
+            <div class="atendimento">
+                <h4>Atendido</h4>
+
+            </div>
+
+            <div class="data">
+                <h4>12/12/2023</h4>
+
+            </div>
+            <div class="responsavel">
+                <h4>Marcelo Botelho</h4>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="coluna">
+
+            <div class="lv">
+                <h4>Obrigação</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum veritatis expedita omnis hic
+                    repudiandae minima officiis provident facere?</p>
+            </div>
+            <div class="vert"></div>
+            <div class="evidencia">
+                <h4>Evidência</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi atque, numquam eius
+                    necessitatibus accusamus est</p>
+            </div>
+
+        </div>
+        <hr>
+        <div class="leg">
+            <div class="norma">Lei nº 67454 de xx/xx/xxxx</div>
+
+
+            <div class="atendimento">
+                <h4>Atendido</h4>
+
+            </div>
+
+            <div class="data">
+                <h4>12/12/2023</h4>
+
+            </div>
+            <div class="responsavel">
+                <h4>Marcelo Botelho</h4>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="coluna">
+
+            <div class="lv">
+                <h4>Obrigação</h4>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum veritatis expedita omnis hic
+                    repudiandae minima officiis provident facere?</p>
+            </div>
+            <div class="vert"></div>
+            <div class="evidencia">
+                <h4>Evidência</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eligendi atque, numquam eius
+                    necessitatibus accusamus est</p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+</body>
+
+</html>
