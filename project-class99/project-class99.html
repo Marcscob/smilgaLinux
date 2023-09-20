@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .navbar {
+        height: 150px;
+        background-color: rgb(143, 0, 0);
+      }
+      .logo {
+        font-size: 35px;
+        color: aliceblue;
+      }
+      .hero {
+        min-height: calc(100vh - 150px);
+        background-color: black;
+        color: aliceblue;
+      }
+      .hero span {
+        color: red;
+        font-size: 30px;
+      }
+      .hero-btn {
+        background-color: darkgoldenrod;
+        color: aliceblue;
+        padding: 10px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <span class="logo">Logo</span>
+    </div>
+    <div class="hero">
+      <span>We are the best</span>
+      <h1>we believe in creativity</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum</p>
+      <button class="hero-btn">read more</button>
+    </div>
+  </body>
 </html>
 
 <!--

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup Móvel</title>
+    <style>
+        #popup {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid blue;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="popup"></div>
+
+<script>
+    let popup = document.getElementById("popup");
+    let isMoving = false;
+
+    document.addEventListener("dblclick", function (e) {
+        if (isMoving) {
+            isMoving = false;
+            return;
+        }
+
+        popup.style.left = (e.clientX - popup.clientWidth / 2) + "px";
+        popup.style.top = (e.clientY - popup.clientHeight / 2) + "px";
+        popup.style.display = "block";
+    });
+
+    document.addEventListener("mousemove", function (e) {
+        if (isMoving) {
+            popup.style.left = (e.clientX - popup.clientWidth / 2) + "px";
+            popup.style.top = (e.clientY - popup.clientHeight / 2) + "px";
+        }
+    });
+
+    popup.addEventListener("mousedown", function () {
+        isMoving = true;
+    });
+
+    popup.addEventListener("mouseup", function () {
+        isMoving = false;
+    });
+</script>
+
+</body>
+</html>

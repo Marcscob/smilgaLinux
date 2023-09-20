@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilize o popup */
+        .popup {
+            position: absolute; /* Defina a posição como absoluta */
+            display: none; /* Inicialmente, o popup deve estar oculto */
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* Estilize o popup */
+            .popup {
+                position: absolute;
+                display: none; /* Inicialmente, o popup deve estar oculto */
+                background-color: #f1f1f1;
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                /* Estilize o popup */
+                .popup {
+                    position: absolute;
+                    display: none; /* Inicialmente, o popup deve estar oculto */
+                    background-color: #f1f1f1;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                }
+            </style>
+        </head>
+        <body>
+        
+        <!-- Substitua este elemento pelo elemento real ao qual deseja associar o popup -->
+        <div id="some-element">Clique aqui para mostrar o popup</div>
+        
+        <script>
+            // Cria um elemento HTML para o popup
+            const popup = document.createElement("div");
+            popup.className = "popup";
+        
+            // Adiciona a imagem ao popup
+            const img = document.createElement("img");
+            img.src = "imagem.jpg";
+            img.width = 100;
+            img.height = 100;
+            popup.appendChild(img);
+        
+            // Adiciona o elemento ao documento
+            document.body.appendChild(popup);
+        
+            // Adiciona um evento "click" ao elemento para exibir o popup
+            const someElement = document.getElementById("some-element"); // Substitua "some-element" pelo ID do elemento que deseja associar ao popup
+        
+            someElement.addEventListener("click", () => {
+                // Mostra o popup na posição do cursor do mouse
+                popup.style.display = "block";
+            });
+        
+            // Adicione também um evento "click" ao popup para fechá-lo quando for clicado
+            popup.addEventListener("click", () => {
+                popup.style.display = "none";
+            });
+        
+            // Adicione um evento "mousemove" ao documento para mover o popup
+            document.addEventListener("mousemove", (e) => {
+                // Verifica se o popup está visível
+                if (popup.style.display === "block") {
+                    // Obtém a posição do cursor do mouse
+                    const mouseX = e.clientX;
+                    const mouseY = e.clientY;
+        
+                    // Atualiza a posição do popup
+                    popup.style.left = mouseX + "px";
+                    popup.style.top = mouseY + "px";
+                }
+            });
+        </script>
+        
+        </body>
+        </html>
+        
+    
+    </body>
+    </html>
+    
+
+</body>
+</html>
+
+</body>
+</html>
