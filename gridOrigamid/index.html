@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        display: grid;
+        grid-template-columns: 2fr 8fr 1fr;
+        text-align: center;
+        border: 1px solid red;
+        color: whitesmoke;
+        background-color: black;
+      }
+
+       header .logo {
+        border: 1px dashed coral;
+        margin: auto 0;
+      }
+
+       header .docName {
+        border: 1px dashed coral;
+        margin: auto 0;
+      }
+
+      header .data {
+        text-align: center;
+        margin: auto 20px;
+        font-size: 12px;
+
+      }
+     
+      .container-1 {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .container-2 {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+      .container-3 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+      .container-4 {
+        display: grid;
+        grid-template-columns: 11fr 1fr;
+      }
+      .cell {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <header>
+    <div class="logo">
+      <img src="./pexels-daniel-nettesheim-1162361.jpg" height="90px" alt="" />
+    </div>
+    <div class="docName"><h1>nome do relatório</h1></div>
+    <div class="data">gerado em xx/xx/xxxx</div>
+  </header>
+  <body>
+    <div class="container-1">
+      <div class="cell c1">cell1</div>
+      <div class="cell c2">cell2</div>
+    </div>
+
+    <div class="container-2">
+      <div class="cell c3">cell3</div>
+      <div class="cell c4">cell4</div>
+    </div>
+    <div class="container-3">
+      <div class="cell c5">cell5</div>
+      <div class="cell c6">cell6</div>
+    </div>
+    <div class="container-4">
+      <div class="cell c7">cell7</div>
+      <div class="cell c8">cell8</div>
+    </div>
+  </body>
+</html>
