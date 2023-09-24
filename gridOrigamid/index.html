@@ -10,7 +10,7 @@
     />
     <style>
       * {
-        margin: 0;
+        margin: 0 2px;
         padding: 0;
         box-sizing: border-box;
         background-color: #070707;
@@ -53,34 +53,60 @@
 
       .cliAreaSetor {
         margin-top: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        height: 40px;
+        min-height: 40px;
+        font-size: 18px;
+        font-weight: 600;
       }
       .reqOrig {
         display: grid;
-        grid-template-columns: 7fr 5fr;
-
-        height: 40px;
+        grid-template-columns: 8fr 1.5fr 2.5fr;
+        min-height: 40px;
+        margin-bottom: 7px;
       }
+
+      .pReq {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .ementaTema {
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+        min-height: 40px;
+        font-weight: 600;
+      }
+      .ementaTemaData {
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+        min-height: 40px;
+        margin-bottom: 5px;
+      }
+      .ementaTemaData p {
+        background-color: transparent;
+        text-align: left;
+        padding: 5px;
+      }
+
       .coordObrigAtend {
         display: grid;
         grid-template-columns: 4fr 6fr 2fr;
-
         height: 40px;
+        font-weight: 600;
       }
       .coordObrigAtendData {
         display: grid;
-        grid-template-columns: 4fr 1fr 2fr 2fr 1fr 2fr;
-        height: 40px;
-
-        margin-bottom: 5px;
+        grid-template-columns: 4fr 1.5fr 1.5fr 1.5fr 1.5fr 2fr;
+        min-height: 40px;
+        margin-bottom: 7px;
       }
       .planoAcao {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 40px;
+        font-weight: 600;
       }
       .planoAcaoData {
         display: grid;
@@ -90,120 +116,192 @@
       .planoAcaoExecutor {
         display: grid;
         grid-template-columns: 1fr;
-        height: 40px;
-        margin-bottom: 5px;
+        min-height: 40px;
+        margin-bottom: 7px;
       }
       .vulnerab {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 40px;
+        font-weight: 600;
       }
       .vulnerabData {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 40px;
-        margin-bottom: 5px;
+        margin-bottom: 7px;
       }
 
       .reavaliacao {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        height: 40px;
+      }
+      .reavaliacaoData {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         height: 40px;
       }
 
       .cell {
-        border: 1px solid rgba(126, 23, 211, 0.726);
-        background-color: #08081f;
-        color: whitesmoke;
+        border: 1px solid rgba(194, 194, 194, 0.514);
+        border-top: none;
+        border-bottom: 1px dashed rgba(128, 128, 128, 0.158);
+
+        color: rgb(0, 34, 5);
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 15px;
+        background-color: #eeffe3d2;
       }
-      span {
-        background-color: transparent;
-      }
+
       .coordObrigAtendData .status,
       .numStat {
-        font-size: 12px;
+        font-size: 10px;
+        font-weight: 600;
+      }
+      p,
+      strong {
+        background-color: transparent;
       }
     </style>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <span class="material-symbols-outlined"> add_task </span>
-      </div>
-      <div class="docName"><h1>nome do relatório</h1></div>
-      <div class="data"><em>gerado em 12/12/2023</em></div>
-    </header>
+    <div class="waterMark">
+      <header>
+        <div class="logo">
+          <span class="material-symbols-outlined"> add_task </span>
+        </div>
+        <div class="docName"><h1>nome do relatório</h1></div>
+        <div class="data"><em>gerado em 12/12/2023</em></div>
+      </header>
 
-    <div class="cliAreaSetor">
-      <div class="cell c1">Premier Ambiental</div>
-      <div class="cell c2">Unidade Rio de Janeiro</div>
-      <div class="cell c2-3">Setor Meio Ambiente</div>
-    </div>
+      <div class="cliAreaSetor">
+        <div class="cell companyName">Premier Ambiental</div>
+        <div class="cell area">Unidade Rio de Janeiro</div>
+        <div class="cell setor">Setor Meio Ambiente</div>
+      </div>
 
-    <div class="reqOrig">
-      <div class="cell c3">Lei nº 4563, de 23 de fevereiro de 2022</div>
-      <div class="cell c3">
-        <span>origem&nbsp;&nbsp;&nbsp;&nbsp;</span>São João de Meriti
+      <div class="reqOrig">
+        <div class="cell requisito">
+          <p class="pReq">Lei nº 4563, de 23 de fevereiro de 2022</p>
+        </div>
+        <div class="cell origem">Municipal</div>
+        <div class="cell nomeOrig">São João de Meriti</div>
       </div>
-    </div>
-    <div class="coordObrigAtend">
-      <div class="cell">Coordenador</div>
-      <div class="cell">Qtd de Obrigações&nbsp;<span>800</span></div>
-      <div class="cell c3">Atendido</div>
-    </div>
-    <div class="coordObrigAtendData">
-      <div class="cell">João da Silva Xavier</div>
-      <div class="cell">
-        <span class="status">A-</span><span class="numStat">100</span>
-      </div>
-      <div class="cell">
-        <span class="status">NAT-</span><span class="numStat">200</span>
-      </div>
-      <div class="cell">
-        <span class="status">NAV-</span><span class="numStat">400</span>
-      </div>
-      <div class="cell">
-        <span class="status">P-</span><span class="numStat">600</span>
-      </div>
-      <div class="cell" style="font-size: 12px">16/10/2023</div>
-    </div>
-    <div class="planoAcao">
-      <div class="cell c7">Plano de Ação</div>
-      <div class="cell c8">Programados</div>
-      <div class="cell c10">Pendentes</div>
-      <div class="cell c11">Concluídos</div>
-    </div>
 
-    <div class="planoAcaoData">
-      <div class="cell c11">20</div>
-      <div class="cell c11">5</div>
-      <div class="cell c9">3</div>
-      <div class="cell c9">12</div>
-    </div>
-    <div class="planoAcaoExecutor">
-      <div class="cell c11">
-        <span>Responsável:</span
-        >&nbsp;&nbsp;<span>maria</span>&nbsp;;&nbsp;<span>jose</span>&nbsp;;&nbsp;<span>alfredo</span>&nbsp;;&nbsp;<span>jorge</span>&nbsp;;&nbsp;
+      <div class="ementaTema">
+        <div class="cell ementa">
+          <p class="ementaLabel">Ementa</p>
+        </div>
+        <div class="cell tema">
+          <p class="ementaLabel">Temas</p>
+        </div>
       </div>
-    </div>
-    <div class="vulnerab">
-      <div class="cell c12">Vulnerável</div>
-      <div class="cell c12">Multas</div>
-      <div class="cell c12">Suspensão</div>
-      <div class="cell c12">Cassação</div>
-    </div>
-    <div class="vulnerabData">
-      <div class="cell grauVuln">100%</div>
-      <div class="cell totalMultas" style="font-size: 15px">300.000,00</div>
-      <div class="cell totalSusp">5</div>
-      <div class="cell totalCassa">5</div>
-    </div>
-    <div class="reavaliacao">
-      <div class="cell c12">Revisado</div>
+      <div class="ementaTemaData">
+        <div class="cell ementa">
+          <p class="ementaLabel">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+            eveniet laboriosam libero
+          </p>
+        </div>
+        <div class="cell tema">
+          <p class="ementaLabel">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit
+          </p>
+        </div>
+      </div>
+
+      <div class="coordObrigAtend">
+        <div class="cell coord"><p>Coordenador</p></div>
+        <div class="cell qtdObrig">
+          <p>Qtd de Obrigações:&nbsp;</p>
+
+          <p class="obrigTotal"><strong>800</strong></p>
+        </div>
+        <div class="cell atendStatus"><p>Atendido</p></div>
+      </div>
+      <div class="coordObrigAtendData">
+        <div class="cell nomeAvaliador"><p>João da Silva uyuioiuXavier</p></div>
+        <div class="cell atendido">
+          <p class="status">A-</p>
+          <p class="numStat">1089</p>
+        </div>
+        <div class="cell nat">
+          <p class="status">NAT-</p>
+          <p class="numStat">2090</p>
+        </div>
+        <div class="cell nav">
+          <p class="status">NAV-</p>
+          <p class="numStat">4090</p>
+        </div>
+        <div class="cell pot">
+          <p class="status">P-</p>
+          <p class="numStat">600</p>
+        </div>
+        <div class="cell" style="font-size: 12px">16/10/2023</div>
+      </div>
+      <div class="planoAcao">
+        <div class="cell paLabel"><p>Plano de Ação</p></div>
+        <div class="cell progLabel"><p>Programados</p></div>
+        <div class="cell pendLabel"><p>Pendentes</p></div>
+        <div class="cell concLabel"><p>Concluídos</p></div>
+      </div>
+
+      <div class="planoAcaoData">
+        <div class="cell paTotal"><p>0</p></div>
+        <div class="cell paProg"><p>5</p></div>
+        <div class="cell paPend"><p>3</p></div>
+        <div class="cell paConc"><p>2</p></div>
+      </div>
+      <div class="planoAcaoExecutor">
+        <div class="cell paResp">
+          <p class="paRespLabel">Responsáveis:</p>
+          &nbsp;&nbsp;
+          <p class="paRespNome1">maria</p>
+          &nbsp;;&nbsp;
+          <p class="paRespNome2">jose</p>
+          &nbsp;;&nbsp;
+          <p class="paRespNome3">alfredo</p>
+          &nbsp;;&nbsp;
+          <p class="paRespNome">jorge</p>
+          &nbsp;;&nbsp;
+        </div>
+      </div>
+      <div class="vulnerab">
+        <div class="cell vulnerabLabel"><p>Vulnerável</p></div>
+        <div class="cell multasLabel"><p>Multas</p></div>
+        <div class="cell suspensLabel"><p>Suspensão</p></div>
+        <div class="cell cassacLabel"><p>Cassação</p></div>
+      </div>
+      <div class="vulnerabData">
+        <div class="cell grauVuln"><p>100%</p></div>
+        <div class="cell totalMultas" style="font-size: 15px">
+          <p>300.000,00</p>
+        </div>
+        <div class="cell totalSusp"><p>5</p></div>
+        <div class="cell totalCassa"><p>5</p></div>
+      </div>
+      <div class="reavaliacao">
+        <div class="cell reavLabel">
+          <p class="pReavLabel">Reavaliação Normativa</p>
+        </div>
+        <div class="cell reavData">
+          <p class="ultReav">Última Reavaliação:&nbsp;</p>
+          <p class="ultReavData">dd/mm/yyyy</p>
+        </div>
+      </div>
+      <div class="reavaliacaoData">
+        <div class="cell titReav">
+          <p>MA-2&nbsp;&nbsp;</p>
+          <p>Concluída</p>
+        </div>
+
+        <div class="cell respReav">
+          <p class="pRrspReaval">Reavaliado por:&nbsp;nbsp;</p>
+          <p class="respReavNome">Maria Helena</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
