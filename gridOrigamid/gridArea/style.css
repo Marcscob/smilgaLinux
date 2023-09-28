@@ -1,0 +1,25 @@
+.grid {
+    display: grid;
+    grid-template-areas:
+      "icon text";
+  }
+  
+  .grid-cell {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .icon-area {
+    grid-area: icon;
+  }
+  
+  .text-area {
+    grid-area: text;
+  }
+  
