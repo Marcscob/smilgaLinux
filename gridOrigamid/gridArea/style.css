@@ -1,25 +1,58 @@
 .grid {
-    display: grid;
-    grid-template-areas:
-      "icon text";
-  }
-  
-  .grid-cell {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .icon {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .icon-area {
-    grid-area: icon;
-  }
-  
-  .text-area {
-    grid-area: text;
-  }
-  
+  display: grid;
+	max-width: 800px;
+	margin: 0 auto;
+	border: 1px solid #bb0606;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	margin: 0px;
+  box-sizing: border-box;
+}
+
+/*na segunda classe de cada div filha criaremos uma área*/
+.logo {
+  grid-area: logo;
+}
+.nav {
+  grid-area: nav;
+}
+.content {
+  grid-area: content;
+}
+.sidenav {
+  grid-area: sidenav;
+}
+.advert {
+  grid-area: advert;
+}
+.footer {
+  grid-area: footer;
+}
+
+/*na segunda class do container criamos a estrutura das areas com cada linha entre aspas*/
+.grid-template-areas-1 {
+  grid-template-areas:
+    "logo nav nav"
+    "sidenav content advert"
+    "sidenav footer footer"
+    ;
+}
+.item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+
+
+
+
