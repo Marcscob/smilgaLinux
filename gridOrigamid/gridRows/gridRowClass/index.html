@@ -5,32 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+
       .grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
-      }
-      .cell{
-        background-color: bisque;
-
+        column-gap: 15px;
       }
       .grid-rows{
-        grid-template-rows: 40px 40px 80px 80px 130px 130px 190px 190px;
-        row-gap: 10px;
+        grid-template-rows: 
+        40px 
+        40px 
+        40px;
+         row-gap: 15px;
       }
+        .cell{
+        /*
+        display: flex;
+        align-items: center;
+        justify-content: center;*/
+        font-size: 40px; 
+        background-color: bisque;
+      }
+
+      
+
+      
     </style>
   </head>
   <body>
     <div class="grid grid-rows">
-      <div class="cell">1</div>
+      
       <div class="cell">2</div>
       <div class="cell">3</div>
       <div class="cell">4</div>
-      <div class="cell">5</div>
-      <div class="cell">6</div>
-      <div class="cell">7</div>
-      <div class="cell">8</div>
-      
+
     </div>
   </body>
 </html>
