@@ -9,7 +9,7 @@ body{
     color: #222;
 }
 .container{
-    border: 5px solid black;
+    border: 5px solid rgb(45, 252, 4);
 }
 .cell{
     padding: 2rem;
@@ -34,7 +34,4 @@ body{
 }
 .cell-5{
     background-color: rgb(134, 8, 8);
-}
-.cell-6{
-    background-color: rgb(75, 70, 70);
 }
