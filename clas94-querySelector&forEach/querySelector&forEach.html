@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wraper">
+  <ul id="result">
+    <li class="special">delectus cupiditate quam ducimus expedita temporibus.</li>
+    <li>Odit fugit repellendus reiciendis, repudiandae id nostrum, quia ab nobis vel beatae amet numquam iste corrupti ex aliquam. Beatae mollitia officia error.</li>
+    <li class="special">ad molestias sit ut explicabo veritatis quidem id, nisi incidunt. Perferendis pariatur temporibus et explicabo, rem nisi totam.</li>
+    <li>consectetur nam eius cumque exercitationem cum voluptates?</li>
+    <li class="special last"> eaque id quos nemo. Veniam exercitationem culpa in aut.</li>
+  </ul>
+  <ul id="result2">
+    <li class="special"> harum odio earum sequi non delectus cupiditate quam ducimus expedita temporibus.</li>
+    <li>iste corrupti ex aliquam. Beatae mollitia officia error.</li>
+    <li class="special">quidem id, nisi incidunt. Perferendis pariatur temporibus et explicabo, rem nisi totam.</li>
+    <li>nam aspernatur numquam minus sapiente nemo illo dolorum, consequatur exercitationem quae, deserunt ducimus! Debitis consectetur nam eius cumque exercitationem cum voluptates?</li>
+    <li class="special last">sit facere? Ipsam eligendi dignissimos eaque id quos nemo. Veniam exercitationem culpa in aut.</li>
+  </ul>
+</div>
+  <script>
+    
+    const result = document.querySelector('#result')
+    result.style.backgroundColor = 'yellow'
+
+    const item = document.querySelector('.special')
+    
+    const lastItem = document.querySelector('li:last-child')
+    
+    const list = document.querySelectorAll('.wraper')
+
+    list.forEach(function(item){
+    
+      text = item.textContent
+      console.log(text)
+    })
+
+  
+    
+    /*const secondItem = document.querySelector('li:nth-child(2)');
+    console.log(secondItem);*/
+
+
+  </script>
+</body>
+</html>
